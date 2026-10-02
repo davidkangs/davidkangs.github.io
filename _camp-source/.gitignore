@@ -1,0 +1,8 @@
+**/node_modules/
+**/.sites-runtime/
+**/.wrangler/
+**/dist/
+**/.next/
+**/*.tsbuildinfo
+**/.env*
+!**/.env.example
