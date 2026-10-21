@@ -62,7 +62,7 @@
     <button type="button" id="tab3" role="tab" aria-controls="day3" aria-selected="false" tabindex="-1" data-day="3">10.22 <span>목 · 마지막 날</span></button>
   </div><span class="tab-hint">아이들 컨디션에 맞춰, 여유 있게.</span></div></div>
   <div class="shell">
-    <noscript>일정표와 목요일 장소 선택에는 자바스크립트가 필요합니다. 오늘은 18:30 한다솥으로 출발, 내일은 12:30 퍼레이드(운영 확인)와 20:00 빅대디 좀비 나이트, 목요일은 10:30 국립수산과학관을 추천합니다. 아래 지도와 출처 링크는 그대로 이용할 수 있습니다.</noscript>
+    <noscript>일정표와 목요일 장소 선택에는 자바스크립트가 필요합니다. 오늘은 18:30 한다솥으로 출발, 10/21은 12:30 메이플·14:00 로티스 퍼레이드와 20:00 빅대디 좀비 나이트, 목요일은 10:30 국립수산과학관을 추천합니다. 아래 지도와 출처 링크는 그대로 이용할 수 있습니다.</noscript>
     <section id="day1" class="day-panel" role="tabpanel" aria-labelledby="tab1">
       <div class="day-heading"><div><p class="eyebrow">DAY 01 · 10월 20일 화요일</p><h2>따뜻한 저녁,<br>그리고 충분한 쉼.</h2><p>3시간 반을 달려 도착한 오늘은 저녁만 먹고 돌아와요.<br>식사 후 산책과 쇼핑은 넣지 않았어요.</p></div><div class="weather"><div>비 · 저녁에도 비 예보</div><strong>19° <span>/ 16°</span></strong><div>최고 / 최저</div><small>10.20 확인 예보</small></div></div>
       <div class="day-grid"><div><table class="schedule"><caption>10월 20일 저녁 일정표</caption><thead><tr><th scope="col">시간</th><th scope="col">우리 가족 일정</th></tr></thead><tbody id="day1-rows"></tbody></table><p class="day-footnote">출발 시각은 18:30으로 고정. 식당 도착·복귀 시각은 주차와 대기 시간을 포함한 계획이며 실시간 길찾기 결과는 아니에요.</p></div><aside class="day-aside" aria-label="오늘 식당과 가족 메모">
@@ -71,34 +71,36 @@
       </aside></div><div class="day-next"><button type="button" data-next="2">내일, 롯데월드의 낮과 밤 →</button></div>
     </section>
     <section id="day2" class="day-panel" role="tabpanel" aria-labelledby="tab2" hidden>
-      <div class="day-heading"><div><p class="eyebrow">DAY 02 · 10월 21일 수요일</p><h2>낮에는 메이플,<br>밤에는 좀비.</h2><p>20시 메인 공연까지 즐길 수 있도록 오전은 숙소에서 쉬어요.<br>퍼레이드 회차에 맞춰 입장하고, 안에서 저녁까지 해결해요.</p></div><div class="weather"><div>오후 바람 · 밤 기온 하강</div><strong>22° <span>/ 8°</span></strong><div>최고 / 최저</div><small>8°는 하루 최저 · 공연 시각 아님</small></div></div>
+      <div class="day-heading"><div><p class="eyebrow">DAY 02 · 10월 21일 수요일</p><h2>낮에는 메이플,<br>밤에는 좀비.</h2><p>20시 메인 공연까지 즐길 수 있도록 오전은 숙소에서 쉬어요.<br>퍼레이드 회차에 맞춰 입장하고, 안에서 저녁까지 해결해요.</p></div><div class="weather"><div>10/21 공식 운영시간</div><strong>10:00 <span>— 21:00</span></strong><div>오늘은 수요일</div><small>당일 운영표 확인 · 날씨는 현장 확인</small></div></div>
       <div class="parade-planner">
-        <div class="choice-intro"><p><b>퍼레이드 입장 계획</b> · 16시 회차의 요일 안내가 자료마다 달라요. 아래 두 안 모두 내일 공식 운영표 확인이 필요해요.</p></div>
+        <div class="choice-intro"><p><b>10/21 공식 당일표로 수정</b> · 오늘 퍼레이드는 12:30 메이플, 14:00 로티스 두 종류예요. 16시 메이플은 오늘 없어요.</p></div>
         <div class="parade-options" role="group" aria-label="수요일 입장 계획 선택">
-          <button type="button" class="button parade-option" data-parade="early" aria-pressed="true">12:00 입장 · 12:30 퍼레이드 우선</button>
-          <button type="button" class="button parade-option" data-parade="late" aria-pressed="false">13:30 입장 · 16시 운영 확인 시</button>
+          <button type="button" class="button parade-option" data-parade="early" aria-pressed="true">12:00 입장 · 두 퍼레이드 관람</button>
+          <button type="button" class="button parade-option" data-parade="late" aria-pressed="false">13:30 입장 · 14시 로티스 관람</button>
         </div>
         <p class="fine" id="parade-plan-note">퍼레이드를 놓치지 않는 쪽을 우선한 안이에요. 파크 체류가 길어져 오후 휴식을 넉넉히 넣었어요.</p>
-        <details class="all-shows"><summary>메이플만 있나요? 확인된 공연·포토타임 모아보기</summary>
-          <p class="fine">같은 퍼레이드의 반복 회차와 별도 프로그램을 구분했어요. 아래는 시즌 발표와 최근 기사·정리 글을 종합한 표이며 10/21 확정 공연표는 아니에요.</p>
-          <table class="schedule show-table"><caption>롯데월드 부산 시즌 공연과 회차</caption><thead><tr><th scope="col">공개된 시간</th><th scope="col">프로그램 · 확인 수준</th></tr></thead><tbody>
-            <tr><td>11:00<span class="time-end">17:00에도 안내</span></td><td><strong>핑크빈 포토타임</strong><p>토킹트리 · 캐릭터와 사진을 찍는 별도 프로그램. 8월 운영사 발표와 10월 정리 글에서 같은 시간 확인.</p></td></tr>
-            <tr><td>12:30<span class="time-end">16:00 회차도 발표</span></td><td><strong>메이플스토리: 댄스 투게더!</strong><p>같은 퍼레이드의 회차예요. 8월에는 하루 두 번으로 발표했지만 10/17 정리 글은 16시를 화·일로 기재해요. 내일 두 회차 모두 열린다고 확정할 수 없어요.</p></td></tr>
-            <tr><td>회차 확인<span class="time-end">수요일 휴연 정보</span></td><td><strong>메이플스토리 버스킹</strong><p>가든스테이지 광장의 음악 공연. 최근 정리 글에는 11:30·13:00·16:30, 수요일 휴연으로 안내돼 내일 기본 일정에서는 뺐어요. 공식 당일표 확인 필요.</p></td></tr>
-            <tr><td>18:00</td><td><strong>좀비월드 포토타임</strong><p>언더랜드 · 배우가 배회하며 가까이 접근하는 포토 연출. 시즌 발표 기준, 화요일 휴연.</p></td></tr>
-            <tr><td>19:00</td><td><strong>좀비월드: 더 비기닝</strong><p>추격과 스파크 연출의 거리 공연. 시즌 발표 기준, 화요일 휴연.</p></td></tr>
-            <tr class="highlight"><td>20:00</td><td><strong>빅대디 좀비 나이트</strong><p>로얄가든 광장의 메인 록 뮤지컬. 시즌 발표 기준, 화요일 휴연. 우리 가족의 저녁 목표.</p></td></tr>
-            <tr><td>20:40<span class="time-end">9/27 현장 기록</span></td><td><strong>로리캐슬 맵핑쇼</strong><p>성 외벽에 영상을 비추는 쇼. 9/29 부산일보 기사에 기록된 시간으로, 내일 동일 시간 운영은 미확인. 현장 확인 후 체력이 남을 때만 추가해요.</p></td></tr>
-            <tr><td>토요일만<span class="time-end">18:00 안내</span></td><td><strong>핑크빈의 일렉트릭 DJ파티</strong><p>최근 정리 글에 토요일 프로그램으로 안내돼요. 수요일 일정에는 넣지 않았어요.</p></td></tr>
-          </tbody></table><p class="fine">로티스 매직포레스트·다크 포레스트 등 과거 시즌 자료도 검색되지만, 이번 방문일에 별도로 운영하는지는 확인하지 못했어요.</p>
-          <div class="actions"><a class="button" href="https://adventurebusan.lotteworld.com/enjoy/performance/list" target="_blank" rel="noopener noreferrer">공식 공연표 열기 ↗</a><a class="button" href="tel:16612000">운영 문의 1661-2000</a></div>
+        <details class="all-shows" open><summary>10/21 수요일 · 공식 당일 공연표</summary>
+          <p class="fine">공식 홈페이지에서 2026.10.21을 지정한 시간표와 오늘의 공연 목록을 대조했어요. 기존 표에서 빠졌던 14시 로티스 퍼레이드를 추가하고, 오늘 없는 16시 메이플 회차를 삭제했어요. 아래는 확인 시점의 예정 시간이며 기상·현장 사정으로 변경될 수 있어요.</p>
+          <table class="schedule show-table"><caption>2026년 10월 21일 수요일 공식 공연 일정</caption><thead><tr><th scope="col">시작 · 소요</th><th scope="col">프로그램 · 장소</th></tr></thead><tbody>
+            <tr><td>11:00<span class="time-end">15분</span></td><td><strong>메이플스토리 핑크빈 포토타임</strong><p>토킹트리 · 17시에도 진행</p></td></tr>
+            <tr class="highlight"><td>12:30<span class="time-end">25분</span></td><td><strong>메이플스토리: 댄스 투게더!</strong><p>퍼레이드 코스 · 오늘 메이플은 이 회차 한 번. 16시 회차는 화·일요일.</p></td></tr>
+            <tr class="highlight"><td>14:00<span class="time-end">30분</span></td><td><strong>로티스 매직포레스트 퍼레이드</strong><p>퍼레이드 코스 · 메이플과 다른 별도 퍼레이드. 이전 안내에서 빠뜨린 공연이에요.</p></td></tr>
+            <tr><td>17:00<span class="time-end">15분</span></td><td><strong>메이플스토리 핑크빈 포토타임</strong><p>토킹트리 · 사진 후 이른 저녁</p></td></tr>
+            <tr><td>18:00<span class="time-end">30분</span></td><td><strong>좀비월드 포토타임</strong><p>언더랜드 · 아이들 반응에 따라 선택</p></td></tr>
+            <tr><td>18:30부터</td><td><strong>멀티미디어 맵핑 ‘시즌 포토존’</strong><p>로리캐슬 · 20:40 맵핑쇼와는 별도 프로그램</p></td></tr>
+            <tr><td>19:00<span class="time-end">20분</span></td><td><strong>좀비월드: 더 비기닝</strong><p>언더랜드 입구</p></td></tr>
+            <tr class="highlight"><td>20:00<span class="time-end">25분</span></td><td><strong>빅대디 좀비 나이트</strong><p>로얄가든광장 · 오늘 저녁의 목표</p></td></tr>
+            <tr><td>20:40<span class="time-end">10분</span></td><td><strong>맵핑쇼 ‘GLorry Lights’</strong><p>로리캐슬 · 체력이 남으면 선택. 오늘은 불꽃놀이 없이 맵핑쇼.</p></td></tr>
+          </tbody></table>
+          <p class="fine"><b>오늘 없는 프로그램:</b> 메이플 버스킹(수요일 휴연), 핑크빈 일렉트릭 DJ파티·불꽃놀이(토요일), 미니 퍼레이드(화요일), 호러 나이트 EDM 파티(10/31). 비가 오면 퍼레이드가 대체되거나 취소될 수 있어요.</p>
+          <div class="actions"><a class="button" href="https://adventurebusan.lotteworld.com/enjoy/performance/list" target="_blank" rel="noopener noreferrer">공식 공연표 · 10/21 선택 ↗</a><a class="button" href="tel:16612000">운영 문의 1661-2000</a></div>
         </details>
       </div>
       <div class="weather-note"><b>밤까지 머무는 날:</b> 어른과 인준이 겉옷, 선준이 담요, 유모차 바람·비 가림막을 챙겨요. 수유·낮잠 시간은 아래 표보다 선준이 리듬을 먼저 따라가세요.</div>
-      <div class="day-grid"><div><table class="schedule"><caption>10월 21일 롯데월드와 좀비 공연 일정표</caption><thead><tr><th scope="col">시간</th><th scope="col">우리 가족 일정</th></tr></thead><tbody id="day2-rows"></tbody></table><p class="day-footnote">퍼레이드 회차는 요일별 안내가 엇갈려 10/21 공식 운영표 확인이 필요해요. 좀비 18/19/20시는 시즌 발표 기준이에요. 날씨와 현장 사정으로 변경될 수 있어요. 숙소에 나갔다가 재입장하는 동선은 잡지 않았어요.</p></div><aside class="day-aside" aria-label="좀비 공연과 아이 동반 안내">
-        <div class="night-card"><p class="eyebrow">WEDNESDAY NIGHT · ZOMBIE WORLD</p><h3>오늘의 목적지는<br>밤 8시, 로얄가든.</h3><div class="night-show"><time>18:00</time><div>좀비월드 포토타임<span>언더랜드 · 배회와 포토 연출</span></div></div><div class="night-show"><time>19:00</time><div>좀비월드: 더 비기닝<span>메인 공연의 앞 이야기 · 위치 현장 확인</span></div></div><div class="night-show main"><time>20:00</time><div><b>빅대디 좀비 나이트</b><span>로얄가든 광장 · 메인 록 뮤지컬</span></div></div><p>시즌 8/29–11/22 · 세 공연 화요일 휴연.<br>수요일 방문은 정규 운영 요일에 해당해요.</p><a href="https://adventurebusan.lotteworld.com/" target="_blank" rel="noopener noreferrer">입장 전 공식 공연 일정 확인 ↗</a></div>
+      <div class="day-grid"><div><table class="schedule"><caption>10월 21일 롯데월드와 좀비 공연 일정표</caption><thead><tr><th scope="col">시간</th><th scope="col">우리 가족 일정</th></tr></thead><tbody id="day2-rows"></tbody></table><p class="day-footnote">공연 시각은 2026.10.21 공식 당일 시간표에서 확인했어요. 이동·식사·휴식 시각은 가족을 위한 제안이에요. 기상·현장 사정에 따른 변경 안내는 입장 후 다시 확인하세요. 숙소에 나갔다가 재입장하는 동선은 잡지 않았어요.</p></div><aside class="day-aside" aria-label="좀비 공연과 아이 동반 안내">
+        <div class="night-card"><p class="eyebrow">WEDNESDAY NIGHT · ZOMBIE WORLD</p><h3>오늘의 목적지는<br>밤 8시, 로얄가든.</h3><div class="night-show"><time>18:00</time><div>좀비월드 포토타임<span>언더랜드 · 배회와 포토 연출</span></div></div><div class="night-show"><time>19:00</time><div>좀비월드: 더 비기닝<span>언더랜드 입구 · 20분</span></div></div><div class="night-show main"><time>20:00</time><div><b>빅대디 좀비 나이트</b><span>로얄가든 광장 · 메인 록 뮤지컬</span></div></div><p>10/21 당일표에서 세 공연 모두 확인.<br>18시 포토타임 · 19시 거리공연 · 20시 록 뮤지컬.</p><a href="https://adventurebusan.lotteworld.com/" target="_blank" rel="noopener noreferrer">입장 전 공식 공연 일정 확인 ↗</a></div>
         <div class="family-note"><h3>좀비는 가까이 올 수 있어요</h3><p>배우가 관객에게 접근하고, 추격·불꽃·큰 소리 연출이 있어요. 가장자리도 조용한 관람석이라고 보장할 수 없어요.</p><p>직원에게 유모차 대기 위치와 이동 동선을 물어보세요. 인준이가 무서워하면 부부가 교대로 관람하고, 선준이는 혼잡·소음에서 떨어져 쉬는 쪽을 추천해요.</p></div>
-        <div class="side-note"><h3>인준이의 낮 시간</h3><ul><li>주황버섯·슬라임 포토존과 가족사진</li><li>회전목마·달려라 염소 등 어린이 기구 후보 2–3개</li><li>12:30 또는 운영 확인된 16시 메이플 퍼레이드</li></ul><p>기구는 현장에서 키·나이·보호자 동반 기준을 확인한 뒤 골라요. 긴 대기 줄보다 사진과 공연을 중심으로 즐겨도 충분해요.</p></div>
+        <div class="side-note"><h3>인준이의 낮 시간</h3><ul><li>주황버섯·슬라임 포토존과 가족사진</li><li>회전목마·달려라 염소 등 어린이 기구 후보 2–3개</li><li>12:30 메이플 + 14:00 로티스 퍼레이드</li></ul><p>기구는 현장에서 키·나이·보호자 동반 기준을 확인한 뒤 골라요. 긴 대기 줄보다 사진과 공연을 중심으로 즐겨도 충분해요.</p></div>
         <div class="side-note"><h3>선준이의 쉬는 시간</h3><p>입장하자마자 유아휴게실 위치와 운영시간을 확인해요. 방문 후기에는 조이풀메도우의 파머스테이블 인근 수유실이 소개돼 있어요. 오후·18시 반 휴식은 자리를 비워 두되 수유 시간은 고정하지 않았어요.</p></div>
       </aside></div><div class="day-next"><button type="button" data-next="3">목요일, 어디로 갈까? →</button></div>
     </section>
@@ -162,7 +164,7 @@
       </div><p class="device-note">지도에서 선택한 장소의 주소를 확인하고 ‘길찾기’를 눌러주세요. 이동 시간과 주차 상황은 출발 직전에 확인해요.</p></div>
     </div>
     <details class="source-details" id="sources"><summary>확인한 정보와 출처 · 2026.10.20 기준</summary><div class="source-body">
-      <div><h3>롯데월드 · 정규 공연 시간</h3><p>운영사 발표를 전한 보도자료와 9월 현장 취재를 교차 확인했어요. 방문일의 변경·취소 여부는 공식 홈페이지와 입구 안내가 우선이에요.</p><ul><li><a href="https://news.tf.co.kr/read/releasecopy/2354418.htm" target="_blank" rel="noopener noreferrer">더팩트 8/14 · 메이플 퍼레이드·포토타임 시즌 발표</a></li><li><a href="https://gamsalife.com/posts/메이플스토리-인-롯데월드-부산-총정리-11월-22일까지-퍼레이드스탬프랠리입장권-가격" target="_blank" rel="noopener noreferrer">10/17 정리 글 · 요일별 회차·버스킹 안내 (공식 원문 재확인 필요)</a></li><li><a href="https://news.tf.co.kr/read/releasecopy/2355876.htm" target="_blank" rel="noopener noreferrer">더팩트 8/20 · 좀비 시즌·시간·연출 안내</a></li><li><a href="https://v.daum.net/v/20260929181423892" target="_blank" rel="noopener noreferrer">부산일보 9/29 · 메이플과 좀비 현장 취재</a></li><li><a href="https://adventurebusan.lotteworld.com/" target="_blank" rel="noopener noreferrer">롯데월드 어드벤처 부산 공식 사이트</a></li><li><a href="https://www.kkday.com/ko/product/133884" target="_blank" rel="noopener noreferrer">KKday 판매 조건 · 모든 권종 재입장 불가 안내</a></li><li><a href="https://thoistory.tistory.com/315" target="_blank" rel="noopener noreferrer">아이 동반 방문 후기 · 수유실 위치 참고</a></li></ul></div>
+      <div><h3>롯데월드 · 10/21 공식 당일표</h3><p>2026년 10월 21일 수요일을 지정한 공식 공연 시간표와 오늘의 공연 목록을 대조했어요. 운영시간도 당일 공식 안내의 10:00–21:00으로 수정했어요. 시즌 기사와 후기보다 방문일 공식표를 우선합니다.</p><ul><li><a href="https://adventurebusan.lotteworld.com/enjoy/performance/list" target="_blank" rel="noopener noreferrer">공식 공연표 · 날짜를 2026.10.21로 선택</a></li><li><a href="https://adventurebusan.lotteworld.com/enjoy/performance/detail?srchPlySeq=57" target="_blank" rel="noopener noreferrer">메이플 퍼레이드 · 요일별 회차</a></li><li><a href="https://adventurebusan.lotteworld.com/enjoy/performance/detail?srchPlySeq=2" target="_blank" rel="noopener noreferrer">로티스 매직포레스트 퍼레이드</a></li><li><a href="https://adventurebusan.lotteworld.com/enjoy/performance/detail?srchPlySeq=16" target="_blank" rel="noopener noreferrer">GLorry Lights 맵핑쇼</a></li><li><a href="https://www.kkday.com/ko/product/133884" target="_blank" rel="noopener noreferrer">KKday 판매 조건 · 재입장 불가 안내</a></li><li><a href="https://thoistory.tistory.com/315" target="_blank" rel="noopener noreferrer">아이 동반 방문 후기 · 수유실 위치 참고</a></li></ul></div>
       <div><h3>목요일 · 공식 시설 안내 우선</h3><ul><li><a href="https://www.fsm.go.kr/kr/" target="_blank" rel="noopener noreferrer">국립수산과학관 · 09–18시, 월요일 휴관</a></li><li><a href="https://www.fsm.go.kr/kr/index.php?idx=76&amp;mode=view&amp;pCode=faq" target="_blank" rel="noopener noreferrer">공식 FAQ · 계단 없는 전시관과 유모차</a></li><li><a href="https://www.fsm.go.kr/kr/index.php?idx=79&amp;mode=view&amp;pCode=faq" target="_blank" rel="noopener noreferrer">공식 FAQ · 관람 소요 약 1시간</a></li><li><a href="https://www.fsm.go.kr/kr/index.php?idx=81&amp;mode=view&amp;pCode=faq" target="_blank" rel="noopener noreferrer">공식 FAQ · 입장과 주차 무료</a> / <a href="https://www.fsm.go.kr/kr/index.php?idx=82&amp;mode=view&amp;pCode=faq" target="_blank" rel="noopener noreferrer">개인 관람 예약 불필요</a></li><li><a href="https://access.visitkorea.or.kr/ms/detail.do?cotId=396e0d3e-9f8e-4720-883e-aa256988f38f" target="_blank" rel="noopener noreferrer">한국관광공사 · 접근로·수유실·유모차</a></li><li><a href="https://www.sciport.or.kr/kor/CMS/Contents/Contents.do?mCode=MN110" target="_blank" rel="noopener noreferrer">국립부산과학관 · 새싹누리관 대상과 회차</a></li><li><a href="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=2c619c22-a4a4-4389-9258-4f15c426f8a4" target="_blank" rel="noopener noreferrer">한국관광공사 · 해동용궁사 108계단 소개</a></li><li><a href="https://www.lotteshopping.com/store/main?cstrCd=0352" target="_blank" rel="noopener noreferrer">롯데 동부산 아울렛 · 영업·시설 안내</a></li></ul></div>
       <div><h3>식당 · 실제 방문 후기 참고</h3><ul><li><a href="https://www.diningcode.com/profile.php?rid=6jvxQFxWZs0R" target="_blank" rel="noopener noreferrer">한다솥 기장점 · 메뉴·영업시간·주차·유아 의자 후기</a></li><li><a href="https://www.haeundaegalbi.com/" target="_blank" rel="noopener noreferrer">해운대암소갈비집 공식 · 주소·영업·전화</a></li><li><a href="https://app.catchtable.co.kr/ct/shop/hgh" target="_blank" rel="noopener noreferrer">캐치테이블 매장 안내 · 메뉴·대기</a></li><li><a href="https://guide.michelin.com/kr/ko/busan-region/busan_1025838/restaurant/haeundae-rib-barbecue-restaurant" target="_blank" rel="noopener noreferrer">미쉐린 가이드 · 역사·갈비·감자사리</a></li><li><a href="https://www.diningcode.com/profile.php?rid=i3QrNAR4zjgW" target="_blank" rel="noopener noreferrer">해운대암소갈비집 · 가격·방문 후기 (유사 상호 후기 구분)</a></li><li><a href="https://www.diningcode.com/profile.php?rid=2ER28if5Ucqx" target="_blank" rel="noopener noreferrer">해녀 조씨할매집 · 메뉴·시설·실제 방문 평가</a></li><li><a href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=4bba9b98-2d60-4b1f-a59d-85c6d7cfe13e" target="_blank" rel="noopener noreferrer">한국관광공사 · 해녀조씨할매집 소개</a></li></ul><p>후기는 방문 시점과 개인 경험에 따라 달라요. 유모차 자리, 당일 영업과 가격은 매장에 확인하세요.</p></div>
       <div><h3>날씨 · 조회 시점의 예보</h3><p>10/20 비, 10/21 낮 22°·밤 최저 8°와 바람, 10/22 맑음·낮 17° 예보를 반영했어요. 표의 온도는 최고·최저이며 공연 시각의 체감온도가 아니에요.</p><ul><li><a href="https://www.accuweather.com/en/kr/gijang-gun/222862/weather-forecast/222862" target="_blank" rel="noopener noreferrer">AccuWeather · 기장군 예보 다시 확인</a></li><li><a href="https://www.weather.go.kr/w/index.do" target="_blank" rel="noopener noreferrer">기상청 날씨누리 · 출발 전 강수·바람 확인</a></li></ul></div>
@@ -195,36 +197,40 @@
     row('20:00','수유·목욕·휴식','선준이 수유와 기저귀, 인준이 씻기기. 식사와 복귀가 늦어지면 그대로 뒤로 미뤄도 괜찮아요.'),
     row('21:00','내일 준비하고 일찍 쉬기','입장권 조건, 겉옷, 유모차 가림막, 보조배터리를 확인해요. 내일 오전에는 외출 일정을 잡지 않았어요.')
   ];
+  const day2Evening = [
+    row('17:00','핑크빈 사진 또는 바로 저녁','토킹트리 포토타임은 15분 예정. 사진을 찍으면 17:20쯤 내부 식당으로 가요. 대기가 길거나 배가 고프면 식사를 먼저 해요.',{end:'— 17:50 식사 목표'}),
+    row('18:00','좀비월드 포토타임 · 선택','언더랜드에서 30분 예정. 배우가 가까이 올 수 있어 인준이 반응을 먼저 살펴요. 이 회차를 건너뛰어도 저녁 공연은 볼 수 있어요.'),
+    row('18:30','수유·기저귀·밤 공연 준비','아이들 휴식을 먼저 챙겨요. 로리캐슬에는 이 시각부터 시즌 포토존 맵핑도 운영해요. 20:40 맵핑쇼와 별개예요.'),
+    row('19:00','좀비월드: 더 비기닝','언더랜드 입구 · 약 20분. 관람 후 로얄가든으로 이동해요. 유모차 대기 위치와 배우 이동 동선은 직원에게 물어봐요.'),
+    row('20:00','빅대디 좀비 나이트','로얄가든광장 · 약 25분. 오늘 밤의 목표예요. 인준이가 무서워하거나 선준이가 힘들어하면 부부 교대 관람이나 먼저 쉬는 안으로 바꿔요.',{tag:'공식 당일표 확인',highlight:true}),
+    row('20:25 이후','숙소로 복귀 또는 맵핑쇼 선택','체력이 떨어지면 공연 후 퇴장해요. 여유가 있으면 20:40 로리캐슬 GLorry Lights(10분)를 보고 20:50 이후 퇴장해요. 오늘 불꽃놀이는 없어요.',{end:'파크 운영 종료 21:00',place:'뉴시즈 오시리아'})
+  ];
   const day2Late = [
-    row('09:00','느긋한 아침과 숙소 휴식','아이들이 깨는 시간에 맞춰 아침을 먹어요. 수유와 낮잠을 먼저 챙기고, 오전 쇼핑은 생략해요.',{end:'— 11:30'}),
-    row('11:30','점심을 먹고 출발 준비','늦게 입장하는 안에서는 연화리 전복죽이 지역 메뉴 후보예요. 식당 대기로 공연을 놓칠 것 같으면 간단히 먹고, 특별한 한 끼는 목요일로 넘겨요.',{end:'— 12:30',place:'해녀 조씨할매집'}),
-    row('12:50','롯데월드로 이동·주차','주차, 유모차 꺼내기, 입장 절차를 위해 여유를 둬요. 지도에서 현재 교통과 주차장 입구를 확인하세요.',{place:'롯데월드 어드벤처 부산'}),
-    row('13:30','입장 · 메이플 포토존과 어린이 기구','먼저 유아휴게실과 오늘 공연표를 확인해요. 인준이 키에 맞는 기구 2–3개와 주황버섯·슬라임 포토존을 골라요.',{end:'— 15:00'}),
-    row('15:00','실내 휴식·수유·간식','다음 공연까지 쉬어 가는 시간. 낮잠 중이면 부모가 번갈아 인준이와 다녀와요.',{end:'— 15:40'}),
-    row('16:00','메이플 퍼레이드 · 당일 운영 확인 시','16시 회차 운영이 확인된 경우에만 이 안을 선택하세요. 회차가 없다면 포토존과 어린이 기구를 즐겨요.',{tag:'운영 확인 필요',highlight:true}),
-    row('17:00','핑크빈 사진 또는 바로 저녁','사진을 원하면 토킹트리 포토타임을 보고 17:20쯤 내부 식당으로 가요. 배가 고프거나 대기가 길면 사진은 생략하고 먼저 먹어요.',{end:'— 17:50 식사 목표'}),
-    row('18:00','좀비월드 포토타임','언더랜드에서 시작하는 저녁 프로그램. 배우가 가까이 올 수 있어요. 인준이 반응을 살피고, 필요하면 부모가 교대로 봐요.'),
-    row('18:30','잠깐 쉬고, 밤 공연 준비','수유·기저귀·화장실을 챙기고 겉옷을 입어요. 18시 포토타임은 건너뛰어도 20시 메인 공연을 볼 수 있어요.'),
-    row('19:00','좀비월드: 더 비기닝','메인 공연의 앞 이야기를 보는 시간. 관람 후 로얄가든 이동 동선과 유모차 대기 위치를 직원에게 확인해요.'),
-    row('20:00','빅대디 좀비 나이트','로얄가든 광장의 메인 록 뮤지컬. 오늘 밤의 목표예요. 아이들이 힘들어하면 교대 관람이나 조기 귀가로 바꿔요.',{tag:'오늘의 메인 공연',highlight:true}),
-    row('공연 후','주차장으로 이동 → 숙소','20:30 전후 퇴장을 목표로 하되 실제 공연 종료와 출구 혼잡에 맞춰 움직여요. 맵핑쇼나 쇼핑은 추가하지 않았어요.',{end:'21:00 전후 복귀 목표',place:'뉴시즈 오시리아'})
+    row('09:00','느긋한 아침과 숙소 휴식','아이들이 깨는 시간에 맞춰 아침을 먹어요. 수유와 낮잠을 먼저 챙겨요.',{end:'— 11:30'}),
+    row('11:30','점심을 먹고 출발 준비','연화리 전복죽은 지역 메뉴 후보예요. 식당 대기가 길면 간단히 먹고, 13:30 입장 목표를 우선해요.',{end:'— 12:30',place:'해녀 조씨할매집'}),
+    row('12:50','롯데월드로 이동·주차','주차, 유모차 꺼내기, 입장 절차에 여유를 둬요. 이 안에서는 12:30 메이플 공연은 보지 않아요.',{place:'롯데월드 어드벤처 부산'}),
+    row('13:30','입장 · 14시 퍼레이드 관람 위치로','유아휴게실 위치를 확인하고 퍼레이드 코스로 이동해요. 유모차가 통행을 막지 않는 관람 위치를 안내받아요.'),
+    row('14:00','로티스 매직포레스트 퍼레이드','메이플과 다른 별도 퍼레이드예요. 약 30분 예정. 늦게 입장해도 이 공연과 저녁 좀비 공연을 볼 수 있어요.',{tag:'공식 당일표 확인',highlight:true}),
+    row('14:30','어린이 기구·포토존·충분한 휴식','인준이 키에 맞는 기구와 사진을 골라요. 수유·낮잠을 우선하고 16시에는 자유롭게 쉬어요. 오늘 16시 메이플 공연은 없어요.',{end:'— 16:50'}),
+    ...day2Evening
   ];
   const day2Early = [
-    row('09:00','느긋한 아침·수유·휴식','오전 쇼핑은 넣지 않았어요. 오늘은 12:30 퍼레이드를 목표로 준비해요.',{end:'— 10:40'}),
-    row('10:45','숙소에서 이른 점심','오후에 다시 간식을 먹을 수 있도록 가볍게 먹어요. 늦지 않게 나갈 수 있도록 외식 이동은 생략해요.',{end:'— 11:15'}),
-    row('11:20','롯데월드로 출발·주차','12시 입장을 목표로 주차와 유모차 승하차 시간을 확보해요. 출발 전에 오늘 공연표와 입장권 이용 조건을 확인하세요.',{place:'롯데월드 어드벤처 부산'}),
-    row('12:00','입장 · 공연 위치와 유아휴게실 확인','공연표에서 12:30 회차를 다시 확인하고 유모차 관람 동선을 안내받아요.'),
-    row('12:30','메이플스토리: 댄스 투게더!','낮의 중심 일정. 같은 퍼레이드를 두 번 보기보다 한 회차를 보고 오후에는 쉬어 가는 안이에요.',{tag:'당일 운영 확인',highlight:true}),
-    row('13:00','어린이 기구와 메이플 포토존','인준이 키와 동반 기준에 맞는 기구 2–3개를 골라요. 긴 대기가 있으면 사진과 가벼운 구경으로 바꿔요.',{end:'— 14:20'}),
-    row('14:20','넉넉한 휴식·수유·낮잠','실내에서 쉬고, 선준이가 자면 부모가 번갈아 인준이와 시간을 보내요. 밤 공연까지 오래 머무니 중간 휴식은 충분히 가져요.',{end:'— 15:40'}),
-    row('15:40','가벼운 구경·간식','16시 퍼레이드가 추가로 운영되면 다시 볼 수 있어요. 한 번 봤다면 무리하지 않고 저녁 전까지 자유롭게 보내요.',{end:'— 16:50'}),
-    ...day2Late.slice(6)
+    row('09:00','느긋한 아침·수유·휴식','오전 쇼핑은 넣지 않았어요. 12:30 메이플과 14시 로티스, 두 퍼레이드를 보는 안이에요.',{end:'— 10:40'}),
+    row('10:45','이른 점심','가볍게 먹고 출발 준비를 해요. 외식 대기로 12:30 공연을 놓치지 않도록 해요.',{end:'— 11:15'}),
+    row('11:20','롯데월드로 출발·주차','12시 입장을 목표로 주차와 유모차 승하차 시간을 확보해요.',{place:'롯데월드 어드벤처 부산'}),
+    row('12:00','입장 · 공연 코스와 유아휴게실 확인','12:30 공연 전에 화장실을 다녀오고 관람 위치를 잡아요.'),
+    row('12:30','메이플스토리: 댄스 투게더!','퍼레이드 코스 · 약 25분. 오늘 메이플 공연은 이 회차 한 번이에요.',{tag:'공식 당일표 확인',highlight:true}),
+    row('13:00','간식·화장실·짧은 휴식','14시에는 다른 퍼레이드가 있어요. 긴 놀이기구 대기는 피하고 가까이서 쉬어요.',{end:'— 13:45'}),
+    row('14:00','로티스 매직포레스트 퍼레이드','퍼레이드 코스 · 약 30분. 메이플과 다른 캐릭터·음악·공연을 만나요.',{tag:'공식 당일표 확인',highlight:true}),
+    row('14:30','넉넉한 휴식·수유·낮잠','밤 공연까지 오래 머무는 날이라 중간 휴식을 충분히 가져요.',{end:'— 15:30'}),
+    row('15:30','어린이 기구·포토존·간식','아이들 컨디션에 맞춰 즐겨요. 오늘 16시 메이플은 없으므로 대기하지 않아도 돼요.',{end:'— 16:50'}),
+    ...day2Evening
   ];
   function selectParade(value, update = true) {
     parade = value === 'late' ? 'late' : 'early';
     $$('.parade-option').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.parade === parade)));
     $('#day2-rows').innerHTML = renderRows(parade === 'late' ? day2Late : day2Early);
-    $('#parade-plan-note').textContent = parade === 'late' ? '16시 회차 운영을 확인했을 때 추천하는 체력 절약안이에요. 16시가 없고 퍼레이드를 꼭 보고 싶다면 12시 입장 안을 선택하세요.' : '퍼레이드를 우선한 안이에요. 12:30 회차도 당일 확인이 필요하고, 파크 체류가 길어져 오후 휴식을 넉넉히 넣었어요.';
+    $('#parade-plan-note').textContent = parade === 'late' ? '12:30 메이플은 생략하고 14:00 로티스 퍼레이드와 저녁 좀비를 보는 안이에요. 파크 체류를 1시간 반 줄일 수 있어요.' : '12:30 메이플 + 14:00 로티스, 서로 다른 두 퍼레이드를 보는 안이에요. 공연 사이 간식과 오후 휴식을 넉넉히 넣었어요.';
     if(update){persist();updateUrl();}
   }
   const choices = {
